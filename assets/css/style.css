@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgba(32, 194, 14, 0.70);
+}
+body{
+    overflow: hidden;
+}
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    background: url("https://cdn.pixabay.com/photo/2014/05/27/23/32/matrix-356024_1280.jpg") center;
+    background-size: cover;
+}
+.container{
+    height: 500px;
+    width: 350px;
+    padding: 1.75rem;
+    border-radius: 1rem;
+    border: 2.5px solid rgba(32, 194, 14, 0.250);
+    background-color: rgba(32, 194, 14, 0.050);
+    backdrop-filter: blur(2.5px);
+    box-shadow: inset 0px 0px 10px 10px #000;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.input, .output{
+    width: 100%;
+    border-radius: 1rem;
+    background-color: transparent;
+    border: 2.5px solid rgba(32, 194, 14, 0.250);
+    padding: 0.75rem;
+    box-shadow: inset 0px 0px 10px 10px #000;
+}
+.input{
+    height: 40%;
+    resize: none;
+    outline: 0;
+}
+.input::placeholder{
+    color: rgba(32, 194, 14, 0.70);
+}
+.buttons{
+    height: 10%;
+    width: 100%;
+    margin: 1rem 0 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.buttons button{
+    height: 100%;
+    width: 100%;
+    margin: 0.25rem;
+    background-color: transparent;
+    border: 2.5px solid rgba(32, 194, 14, 0.250);
+    box-shadow: inset 0px 0px 10px 10px #000;
+    border-radius: 1rem;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.buttons button:active{
+    transform: scale(0.9);
+}
+.output{
+    height: 50%;
+    overflow-x: scroll;
+    font-size: small;
+}
